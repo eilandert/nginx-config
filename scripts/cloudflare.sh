@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CLOUDFLARE_FILE_PATH=../myguard.conf/serverblock/cloudflare.conf
+CLOUDFLARE_FILE_PATH=../myguard.conf/serverblock/cloudflare/adresses.conf
 
 echo "# Include this file in your vhost" > $CLOUDFLARE_FILE_PATH;
 echo "" >> $CLOUDFLARE_FILE_PATH;
