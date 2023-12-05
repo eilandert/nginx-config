@@ -1,7 +1,7 @@
 #!/bin/bash
 
-FILE="botmap.conf"
-ROBOTSTXT="robots.txt"
+FILE="../myguard.conf/maps/botmap.conf"
+ROBOTSTXT="../myguard.conf/robots.txt"
 
 wget -q -O - https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/_generator_lists/bad-user-agents.list > bad-user-agents.list
 
@@ -20,3 +20,4 @@ echo "}" >> ${FILE}
 sed -i s/"\\\ "/" "/g ${ROBOTSTXT}
 sed -i s/"\\\ "/" "/g ${FILE}
 
+rm  bad-user-agents.list
